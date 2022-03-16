@@ -8,7 +8,6 @@
     tools:context=".ui.FormularioAlunoActivity"
     android:orientation="vertical">
 
-
     <EditText
         android:id="@+id/activity_formulario_aluno_nome"
         android:layout_width="match_parent"

@@ -31,16 +31,22 @@ public class ListaAlunosActivity extends AppCompatActivity {
 
         FloatingActionButton botaoNovoAluno = findViewById(R.id.floatingActionButton);
         botaoNovoAluno.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 abreFormularioAlunoActivity();
             }
+
         });
 
-        dao.salva(new Aluno("Thalan","5564454", "@"));
-        dao.salva(new Aluno("Thalan","5564454", "@"));
-        dao.salva(new Aluno("Thalan","5564454", "@"));
+        setValoresPadroesDaLista();
 
+    }
+
+    private void setValoresPadroesDaLista() {
+        dao.salva(new Aluno("Thalan", "5564454", "@"));
+        dao.salva(new Aluno("Thalan", "5564454", "@"));
+        dao.salva(new Aluno("Thalan", "5564454", "@"));
     }
 
     private void abreFormularioAlunoActivity() {
